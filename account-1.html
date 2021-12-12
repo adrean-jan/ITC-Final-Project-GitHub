@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cood | Account</title>
+    <link rel="stylesheet" href="account-1.css"/>
+    <script>
+        function Warning() {
+    alert("The forms didn't save any data and has no database to function.");
+    }
+    </script>
+    <style>
+        body{
+            background-image: url('sm.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!--- Experimental log-in/Sign-out module -->
+    <div class="heading">
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="account-1.html">Account</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="explore.html">Explore</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+    <div class="container">
+        <form>
+            <h1>Create Account</h1>
+            <div>
+                <h2>Hello, Friend!</h2>
+                 <p>Enter your personal details and start journey with us</p>
+            </div>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="tel" placeholder="Contact Number" />
+            <input type="password" placeholder="Password" /><br>
+            <button onclick="Warning()">Sign Up</button><br>
+        </form>
+        <form>
+            <h1>Log In</h1>
+            <div>
+                <h2>Welcome Back!</h2>
+                <p>To keep connected with us please login with your personal info</p>
+            </div>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <a href="password.html" class="pass">Forgot your password?</a>
+            <button onclick="Warning()">Log In</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

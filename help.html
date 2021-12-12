@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cood | Help</title>
+    <link rel="stylesheet" href="help.css"/>
+    <style>
+        body{
+            background-image: url("pexels-aleksandar-pasaric-2603464.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <script>
+        function Warning() {
+            alert("The forms didn't save any data and has no database to function.");
+        }
+    </script>
+</head>
+<body>
+    <div class="heading">
+        <div class="nav">
+            <ul>
+                <li><a href="index-1.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="account-1.html">Account</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="explore.html">Explore</a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>Find your things you want to know or...<br>Just ask us!</h1><br>
+        </div>
+        <div class="body">
+            <div class="container">
+                <form>
+                    <h1>Help Desk</h1><br>
+                    <div>
+                        <h2>Hello, Friend!</h2>
+                        <p>Are you in trouble? Don't worry we here for you</p>
+                    </div>
+                    <input type="email" placeholder="Email" />
+                    <input type="text" placeholder="What are you looking for?" />
+                    <p>Need to more detailed help request?<br> You can ask here!</p>
+                    <textarea name="desc" rows="10" cols="40">
+                    </textarea><br>
+                    <button onclick="Warning()">Submit</button>
+                    <div>
+                        <p>Cood Team will immediately respond to your queries in a short time.<br>
+                        Please check your email to see!
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

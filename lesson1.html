@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cood | C# Programming</title>
+    <link rel="stylesheet" href="lesson1.css"/>
+    <script src="lesson.js"></script>
+    <style>
+        body{
+            background-image: url('pexels-aleksandar-pasaric-2603464.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="account-1.html">Account</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="explore.html">Explore</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="program">
+        <h1>Welcome to C# Programming Fundamentals!</h1>
+        <p> In this course will teach basics of high level programming<br>
+            concepts using C# in developing console applications. 
+        </p>  
+    </div>
+    <div class="lesson">
+        <div><img src="5f9c9dc1740569d1a4ca3974.jpg" height="300" width="100%"></div>
+        <div class="r">
+            <h2>Lecture 1: C# programming overview</h2>
+            <p>C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming 
+            language. C# enables developers to build many types of secure and robust applications 
+            that run in .NET. C# has its roots in the C family of languages and will be immediately 
+            familiar to C, C++, Java, and JavaScript programmers. 
+            <br><br>
+            C# is an object-oriented, component-oriented programming language. C# provides language 
+            constructs to directly support these concepts, making C# a natural language in which to 
+            create and use software components. Since its origin, C# has added features to support 
+            new workloads and emerging software design practices. At its core, C# is an 
+            object-oriented language. You define types and their behavior.
+            <br><br>
+            C# programs run on .NET, a virtual execution system called the common language runtime 
+            (CLR) and a set of class libraries. The CLR is the implementation by Microsoft of the 
+            common language infrastructure (CLI), an international standard. The CLI is the basis 
+            for creating execution and development environments in which languages and libraries 
+            work together seamlessly.</p>
+        </div>
+    </div>
+    <div class="lesson">
+        <div><img src="code.jpg" height="300" width="100%"></div>
+        <div class="r">
+            <h2>Lecture 2: Basic Syntax</h2>
+            <p>Basic Syntax of C# programming language</p><br>
+            <pre>
+                <code>
+                using System;
+
+                namespace HelloWorld
+                {
+                    class Program
+                    {
+                        static void Main(string[] args)
+                        {
+                        Console.WriteLine("Hello World!");
+                        // Output: Hello World!    
+                        }
+                    }
+                }
+                </code>
+            </pre>
+            <br>
+            <h2>Example explained</h2>
+            <p>
+            <b>Line 1:</b> using System means that we can use classes from the System namespace.<br>
+            <b>Line 2:</b> A blank line. C# ignores white space. However, multiple lines makes the code more readable.<br>
+            <b>Line 3:</b> namespace is used to organize your code, and it is a container for classes and other namespaces.<br>
+            <b>Line 4:</b> The curly braces {} marks the beginning and the end of a block of code.<br>
+            <b>Line 5:</b> class is a container for data and methods, which brings functionality to your program. 
+            Every line of code that runs in C# must be inside a class. In our example, we named the class Program.
+            <b>Line 7:</b> Another thing that always appear in a C# program, is the Main method. Any code inside its 
+            curly brackets {} will be executed. You don't have to understand the keywords before and after Main.<br>
+            <b>Line 9:</b> Console is a class of the System namespace, which has a WriteLine() method that is used 
+            to output/print text. In our example it will output "Hello World!".<br>
+            <b>If you omit the using System line, you would have to write System.Console.WriteLine() to print/output text.</b><br>
+            <b>Note:</b> Every C# statement ends with a semicolon ;.<br>
+            <b>Note:</b> C# is case-sensitive: "MyClass" and "myclass" has different meaning.<br>
+            <b>Note:</b> Unlike Java, the name of the C# file does not have to match the class name, but they often do (for better organization). 
+            When saving the file, save it using a proper name and add ".cs" to the end of the filename. 
+            To run the example above on your computer, make sure that C# is properly installed.<br>
+            </p>
+        </div>
+    </div>
+    <div class="lesson">
+        <div><img src="datatypes.png" height="500" width="100%"></div>
+        <div class="r">
+            <h2>Lecture 3: Data Types</h2>
+            <p>Different types of data types and their syntax</p><br>
+            <pre>
+                <code>
+                int myNum = 5;               // Integer (whole number)
+                double myDoubleNum = 5.99D;  // Floating point number
+                char myLetter = 'D';         // Character
+                bool myBool = true;          // Boolean
+                string myText = "Hello";     // String
+                </code>
+            </pre>
+            <br>
+            <p>
+            <b>Data type</b> specifies the size and type of variable values. It is important to use the correct data type 
+            for the corresponding variable; to avoid errors, to save time and memory, but it will also make your code 
+            more maintainable and readable.<br>
+            <b>Integer types</b> stores whole numbers, positive or negative (such as 123 or -456), without decimals. Valid types are int and long. 
+            Which type you should use, depends on the numeric value. <br>
+            <b>Floating point types</b> represents numbers with a fractional part, containing one or more decimals. 
+            Valid types are float and double.<br>
+            <b>Boolean data type</b> is declared with the bool keyword and can only take the values true or false.<br>
+            <b>Char data type</b> is used to store a single character. The character must be surrounded by single quotes, like 'A' or 'c'.<br>
+            <b>String data type</b> is used to store a sequence of characters (text). String values must be surrounded by double quotes.<br>
+            </p>
+        </div>
+    </div>
+    <div class="lesson">
+        <div><img src="operators-in-csharp.jpg" height="300" width="100%" class="datatypes"></div>
+        <div class="r">
+            <h2>Lecture 4: Operators</h2>
+            <p>Different types of Operators with User Inputs</p><br>
+            <pre>
+                <code>
+                int x = Console.ReadLine();
+                int y = Console.ReadLine();
+                int z = x + y;
+                int a = x - y;
+                int b = x / y;
+                int c = x * y;
+                int d = x % y;
+                int e = x++;
+                int f = y--;
+                </code>
+            </pre>
+            <br>
+            <p>
+                Arithmetic Operators<br>
+                <b>Addition</b> = Adds together two values. x + y<br>
+                <b>Subraction</b> = Subtracts one value from another. x - y<br>
+                <b>Multiplication</b> = Multiplies two values. x * y<br>
+                <b>Division</b> = Multiplies two values. x / y<br>
+                <b>Modulus</b> = Returns the division remainder. x % y<br>
+                <b>Increment</b> = Increases the value of a variable by 1. x++<br>
+                <b>Decrement</b> = Decreases the value of a variable by 1. y--<br>
+                <br>Comparison Operators<br>
+                <b>Equal to</b> x == y<br>
+                <b>Not equal</b> x!= y<br>
+                <b>Greater than</b> x > y<br>
+                <b>Less than</b> x &lt; y<br>
+                <b>Greater than or equal to</b> x >= y<br>
+                <b>Less than or equal to</b> x &lt;= y<br>
+                <br>Logical Operators<br>
+                <b>Logical and</b> Returns true if both statements are true. x > 5 &&  x > 10<br>
+                <b>Logical or</b> Returns true if one of the statements is true. x > 5 || x > 4<br>
+                <b>Logical not</b> Reverse the result, returns false if the result is true. !(x > 5 && x > 10)<br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

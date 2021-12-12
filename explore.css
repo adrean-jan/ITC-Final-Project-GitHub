@@ -1,0 +1,124 @@
+body{
+    font-family: Montserrat;
+    color: white;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(scripts/media/Montserrat-Regular.ttf);
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    padding-left: 50px;
+    margin-bottom: 30px;
+}
+ul{
+    list-style-type: none;
+    margin: 8px;
+    padding: 0;
+    overflow: hidden;
+}
+.list{
+    float: right;
+    border-style: solid none none none;
+    border-width: 2;
+}
+.list a{
+    display: block;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: inherit;
+}
+.list a:hover{
+    background-color: white;
+    color: black;
+}
+.body {
+    padding-left: 50px;
+    margin-bottom: 300px;
+}
+h1 {
+    font-size: 70px;
+    animation: colorchange 8s infinite alternate;
+}
+@keyframes colorchange {
+	0% {
+		color:rgba(113, 255, 201, 1);
+	}
+    25%{
+        color:rgb(122, 113, 255);
+    }
+    50%{
+        color:rgb(255, 113, 219);
+    }
+	70% {
+		color:rgb(255, 113, 113);
+	}
+	100% {
+		color:rgba(113, 255, 201, 1);
+	}
+}
+.program{
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 70px;
+}
+.lesson{
+    margin: 80px;
+    padding: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    text-align: left;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(113, 255, 201, 1);
+	}
+	70% {
+		box-shadow: 0 0 0 20px rgba(113, 255, 201, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(113, 255, 201, 0);
+	}
+}
+.syll{
+    padding: 14px 20px;
+}
+table{
+    border-color: none;
+    text-align: left;
+    width: 100%;
+}
+th, td{
+    padding: 10px;
+}
+button {
+	border-radius: 20px;
+	border: 1px solid #5fc7e7;
+	background-color: #5fc7e7;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+    margin: 10px;
+}
+button:active {
+	transform: scale(0.95);
+}
+button:focus {
+	outline: none;
+}
+button:hover {
+	transform: scale(1.2);
+	border: 1px solid #a760e9;
+	background-color: #a760e9;
+}

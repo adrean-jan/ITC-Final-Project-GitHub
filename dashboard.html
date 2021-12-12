@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cood | Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css"/>
+    <script src="lesson.js"></script>
+    <style>
+        body{
+            background-image: url('pexels-aleksandar-pasaric-2603464.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="account-1.html">Account</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="explore.html">Explore</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <h1>Welcome to Dashboard</h1>
+        <h2>Have you checked our courses yet? If not then let's explore some!</h2>
+        <a href="explore.html">
+        <button class="Explore">
+            <span><strong>Explore Now</strong></span>
+        </button></a>
+    </div>
+    <div class="container">
+        <h1>Good to see You!</h1>
+        <p>Here you can enroll yourself in one of our courses and see what you learned!</p>
+    </div>
+    <div class="progress">
+        <h2>Achievement: Complete all courses</h2>
+        <br>
+        <progress id="prog"></progress>
+        <br><br>
+        <p>Completed<span id="num"> 0</span> of 2 courses <span id=p></span></p>
+    </div>
+    <div>
+        <div class="lesson">
+            <h2>C# Programming Fundamentals</h2>
+            <h3>by w3school</h3><br>
+            <img src="Csharp.png" height="150" width="400">
+            <br><br>
+            <p> In this course will teach basics of high level programming
+                concepts using C# in developing console applications. </p>
+            <br><br>
+            <button onclick="Warning()" class="btn">Enroll</button>
+            <a href="lesson1.html"><button class="btn">Open</button></a>
+            <button onclick="move();this.disabled='true'" class="btn">Done</button>
+        </div>
+        <div class="lesson">
+            <h2>Essentials of Digital Arts</h2>
+            <h3>by CoodTeam</h3><br>
+            <img src="FDU9j6CacAEFKy2.jpg" height="150" width="400">
+            <br><br>
+            <p> This course will cover all basic concepts and practical techniques to
+                create a visually appealing designs. It includes special topics in anime art. </p>
+            <br><br>
+            <button onclick="Warning()" class="btn">Enroll</button>
+            <button onclick="Warning2()" class="btn">Open</button>
+            <button onclick="move();this.disabled='true'" class="btn">Done</button>
+        </div>
+    </div>
+</body>
+</html>

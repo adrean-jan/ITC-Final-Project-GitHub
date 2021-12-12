@@ -1,0 +1,155 @@
+body{
+    font-family: montserrat;
+    color: white;
+}
+@font-face {
+    font-family: montserrat;
+    src: url(scripts/Montserrat-Regular.ttf);
+}
+.nav{
+    display: flex;
+    padding-left: 50px;
+    margin-bottom: 120px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+}
+li{
+    float: right;
+    border-style: solid none none none;
+    border-width: 2;
+}
+li a{
+    display: block;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: inherit;
+}
+li a:hover{
+    background-color: white;
+    color: black;
+}
+.logo{
+    float: left;
+}
+.page{
+    overflow: auto;
+    margin-bottom: 50px;
+    padding: 20px;
+    padding-right: 150px;
+}
+h1{
+    font-size: 60px;
+    font-weight: 900;
+}
+p{
+    text-align: justify;
+}
+.blob-1{
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+    transform: scale(1.2);
+    float: left;
+    animation: pulse 2s infinite;
+}
+.blob-2{
+    background-color: #5fc7e7;
+    border-radius: 50%;
+    margin: 10px;   
+    height: 20px;
+    width: 20px;
+    transform: scale(1.2);
+    float: left; 
+    animation: pulse 2s infinite;  
+}
+.blob-3{
+    background-color: #a760e9;
+    border-radius: 50%;
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+    transform: scale(1.2);
+    float: left;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(113, 255, 201, 0.7);
+	}
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(113, 255, 201, 0);
+	}
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(113, 255, 201, 0);
+	}
+}
+.footer{
+    text-align: center;
+    font-weight: bolder;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    position:relative;
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.slides{
+    width:300px;
+    height:180px;
+    border-radius: 20%;
+    padding:5px;
+    transition: all .5s ease-in-out;
+}
+.slides:hover{
+    transform: scale(1.2);
+}
+.gallery-text{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+button {
+	background: transparent;
+    border-style: solid;
+    border-color: black;
+    border-radius: 3rem;
+	padding: 1.5rem 3rem;
+	margin: 0;
+    margin-bottom: 100px;
+	font-family: inherit;
+	font-size: inherit;
+	position: relative;
+	display: inline-block;
+    transition: all .3s ease-in-out;
+}
+button:hover{
+    background: black;
+    color: white;
+    border-color: white;
+    border-width: 3px;
+    transform: scale(1.2);
+}
+.btns{
+    font-size: 25px;
+    text-align: center;
+}
+button:active {
+	transform: scale(0.95);
+}
+button:focus {
+	outline: none;
+}
